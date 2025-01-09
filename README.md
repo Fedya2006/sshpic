@@ -13,6 +13,16 @@
 - **Simple Interface**: Easy-to-use API for seamless integration into projects.
 
 ---
+## Theoretical evaluation of generation variability:
+
+A 4-byte seed and a 1-byte guidance_scale are used to generate each image.
+
+Then in theory it is possible to generate in the case of a 32-byte fingerprint:
+
+**2^((4×8+1×8)×6 + 2×8) = 2^256** different collage variants, which with is enough for **2^256** different ssh fingerprints.
+There are 6 images on the collage + texture on seed which takes 2 bytes in this case.
+
+---
 
 ## Installation
 
